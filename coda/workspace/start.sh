@@ -15,7 +15,7 @@ SPEED="2" # constant speed for random direction (m/s)
 TXGAIN=-14 # transmission power gain reduction (dB)
 RXGAIN=-10 # receiving power gain reduction (dB)
 TRACE=$PWD/rwdata.ns_movements # set to "random" for random direction 
-OUT=simulation # name of the output folder
+OUT=. # name of the output folder
 
 SET_ENV=$PWD/test_build_ns3_dce/ns-3-dce/utils/setenv.sh
 PROG=$PWD/test_build_ns3_dce/build/bin/dce-ccnd-mobility-random4

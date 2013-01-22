@@ -1,27 +1,27 @@
-# project ns (3-dev) configured on Sat Jan 12 15:51:53 2013 by
-# waf 1.6.11 (abi 98, python 20606f0 on linux2)
-# using ./waf configure -d optimized --prefix=/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/../build --enable-tests
+# project ns (3-dev) configured on Tue Jan 22 22:58:41 2013 by
+# waf 1.6.11 (abi 98, python 20703f0 on linux2)
+# using ./waf configure -d debug --prefix=/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/../build --enable-tests --enable-examples
 #
 ----------------------------------------
 Setting top to
-/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev
+/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev
 ----------------------------------------
 Setting out to
-/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build
+/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build
 ----------------------------------------
 Checking for 'gcc' (c compiler)
-find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='CC' -> '/usr/bin/gcc'
-find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='AR' -> '/usr/bin/ar'
+find program=['gcc', 'cc'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='CC' -> '/usr/bin/gcc'
+find program=['ar'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='AR' -> '/usr/bin/ar'
 /usr/bin/gcc
 ----------------------------------------
 Checking for 'g++' (c++ compiler)
-find program=['g++', 'c++'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='CXX' -> '/usr/bin/g++'
+find program=['g++', 'c++'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='CXX' -> '/usr/bin/g++'
 (tool ar is already loaded, skipping)
 /usr/bin/g++
 ----------------------------------------
 Checking for program pkg-config
 /usr/bin/pkg-config
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='PKG_CONFIG' -> '/usr/bin/pkg-config'
+find program=['pkg-config'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='PKG_CONFIG' -> '/usr/bin/pkg-config'
 ---------------------------------------------------------
 Checking for compilation flag -Wl,--soname=foo... support
 ==>
@@ -31,52 +31,52 @@ int main() { return 0; }
 <==
 [1/2] [32mcxx: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/test.cc -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o
 [0m
-['/usr/bin/g++', '-O3', '-Wl,--soname=foo', '../test.cc', '-c', '-o', 'test.cc.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cc', '-c', '-o', 'test.cc.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cc.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cc.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 ok
 ---------------------------------------------------------
 Checking for program python
 /usr/bin/python
-find program=['python'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='PYTHON' -> '/usr/bin/python'
+find program=['python'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='PYTHON' -> '/usr/bin/python'
 ['/usr/bin/python', '-c', 'import sys\nfor x in sys.version_info: print(str(x))']
 out: 2
-6
-6
+7
+3
 final
 0
 
-['/usr/bin/python', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(standard_lib=0, prefix='/root/inria-coda/coda/workspace/test_build_ns3_dce/build') or ''))"]
-out: '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages'
+['/usr/bin/python', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(standard_lib=0, prefix='/home/dev/coda/coda/workspace/test_build_ns3_dce/build') or ''))"]
+out: '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages'
 
-['/usr/bin/python', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(plat_specific=1, standard_lib=0, prefix='/root/inria-coda/coda/workspace/test_build_ns3_dce/build') or ''))"]
-out: '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages'
+['/usr/bin/python', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_python_lib(plat_specific=1, standard_lib=0, prefix='/home/dev/coda/coda/workspace/test_build_ns3_dce/build') or ''))"]
+out: '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages'
 
 ---------------------------------------------------------
 Checking for python version
-(2, 6, 6, 'final', 0)
+(2, 7, 3, 'final', 0)
 ['/usr/bin/python', '-c', "from distutils.sysconfig import get_config_var, get_python_lib\n\nprint(repr(get_config_var('prefix') or ''))\nprint(repr(get_config_var('SO') or ''))\nprint(repr(get_config_var('LDFLAGS') or ''))\nprint(repr(get_config_var('LIBDIR') or ''))\nprint(repr(get_config_var('LIBPL') or ''))\nprint(repr(get_config_var('INCLUDEPY') or ''))\nprint(repr(get_config_var('Py_ENABLE_SHARED') or ''))\nprint(repr(get_config_var('MACOSX_DEPLOYMENT_TARGET') or ''))\nprint(repr(get_config_var('LDSHARED') or ''))\nprint(repr(get_config_var('CFLAGS') or ''))"]
 out: '/usr'
 '.so'
-''
+'-Wl,-Bsymbolic-functions -Wl,-z,relro'
 '/usr/lib'
-'/usr/lib/python2.6/config'
-'/usr/include/python2.6'
+'/usr/lib/python2.7/config'
+'/usr/include/python2.7'
 ''
 ''
-'gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions'
-'-fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes'
+'gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro'
+'-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security'
 
 Configuration returned from ['/usr/bin/python']:
-"prefix = '/usr'\nSO = '.so'\nLDFLAGS = ''\nLIBDIR = '/usr/lib'\nLIBPL = '/usr/lib/python2.6/config'\nINCLUDEPY = '/usr/include/python2.6'\nPy_ENABLE_SHARED = ''\nMACOSX_DEPLOYMENT_TARGET = ''\nLDSHARED = 'gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions'\nCFLAGS = '-fno-strict-aliasing -g -O2 -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes'"
+"prefix = '/usr'\nSO = '.so'\nLDFLAGS = '-Wl,-Bsymbolic-functions -Wl,-z,relro'\nLIBDIR = '/usr/lib'\nLIBPL = '/usr/lib/python2.7/config'\nINCLUDEPY = '/usr/include/python2.7'\nPy_ENABLE_SHARED = ''\nMACOSX_DEPLOYMENT_TARGET = ''\nLDSHARED = 'gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-Bsymbolic-functions -Wl,-z,relro'\nCFLAGS = '-fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security'"
 
 
 
 # try again with -L$python_LIBDIR: ['/usr/lib']
 
 ---------------------------------------------------------
-Checking for library python2.6 in LIBDIR
+Checking for library python2.7 in LIBDIR
 ==>
 
 int main() {
@@ -84,21 +84,21 @@ int main() {
 }
 
 <==
-[1/2] [32mcxx: build/.conf_check_c4081480d4a9d97f4ed31819aee44093/test.cpp -> build/.conf_check_c4081480d4a9d97f4ed31819aee44093/testbuild/test.cpp.1.o
+[1/2] [32mcxx: build/.conf_check_9a1d0551212c9d703363e62dfbc51c79/test.cpp -> build/.conf_check_9a1d0551212c9d703363e62dfbc51c79/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-fno-strict-aliasing', '-fwrapv', '-DPYTHONDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DPYTHONARCHDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DNDEBUG', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
-[2/2] [33mcxxprogram: build/.conf_check_c4081480d4a9d97f4ed31819aee44093/testbuild/test.cpp.1.o -> build/.conf_check_c4081480d4a9d97f4ed31819aee44093/testbuild/testprog
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-fno-strict-aliasing', '-fwrapv', '-fstack-protector', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DPYTHONARCHDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DNDEBUG', '-D_FORTIFY_SOURCE=2', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+[2/2] [33mcxxprogram: build/.conf_check_9a1d0551212c9d703363e62dfbc51c79/testbuild/test.cpp.1.o -> build/.conf_check_9a1d0551212c9d703363e62dfbc51c79/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_c4081480d4a9d97f4ed31819aee44093/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib', '-lpython2.6']
+['/usr/bin/g++', '-Wl,-Bsymbolic-functions', '-Wl,-z,relro', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_9a1d0551212c9d703363e62dfbc51c79/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib', '-lpython2.7']
 yes
 -------------------------------------------------------------------------
-Checking for program python2.6-config,python-config-2.6,python2.6m-config
-/usr/bin/python2.6-config
-find program=['python2.6-config', 'python-config-2.6', 'python2.6m-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='PYTHON_CONFIG' -> '/usr/bin/python2.6-config'
-['/usr/bin/python2.6-config', '--includes']
-out: -I/usr/include/python2.6 -I/usr/include/python2.6
+Checking for program python2.7-config,python-config-2.7,python2.7m-config
+/usr/bin/python2.7-config
+find program=['python2.7-config', 'python-config-2.7', 'python2.7m-config'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='PYTHON_CONFIG' -> '/usr/bin/python2.7-config'
+['/usr/bin/python2.7-config', '--includes']
+out: -I/usr/include/python2.7 -I/usr/include/python2.7
 
-Include path for Python extensions (found via python-config --includes): ['/usr/include/python2.6']
+Include path for Python extensions (found via python-config --includes): ['/usr/include/python2.7']
 
 -------------------------------------------------------------------------
 Checking for header Python.h
@@ -123,10 +123,10 @@ int main()
 <==
 [1/2] [32mcxx: build/.conf_check_d6c8946949ece91ce43c989711393fec/test.cpp -> build/.conf_check_d6c8946949ece91ce43c989711393fec/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-fno-strict-aliasing', '-fwrapv', '-fno-strict-aliasing', '-I/usr/include/python2.6', '-DPYTHONDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DPYTHONARCHDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DNDEBUG', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-fno-strict-aliasing', '-fwrapv', '-fstack-protector', '-fno-strict-aliasing', '-I/usr/include/python2.7', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DPYTHONARCHDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DNDEBUG', '-D_FORTIFY_SOURCE=2', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_d6c8946949ece91ce43c989711393fec/testbuild/test.cpp.1.o -> build/.conf_check_d6c8946949ece91ce43c989711393fec/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d6c8946949ece91ce43c989711393fec/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib', '-lpython2.6']
+['/usr/bin/g++', '-Wl,-Bsymbolic-functions', '-Wl,-z,relro', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d6c8946949ece91ce43c989711393fec/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib', '-lpython2.7']
 yes
 -------------------------------------------------------------------------
 Checking for compilation flag -fvisibility=hidden... support
@@ -137,10 +137,10 @@ int main() { return 0; }
 <==
 [1/2] [32mcxx: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/test.cc -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o
 [0m
-['/usr/bin/g++', '-O3', '-fvisibility=hidden', '-DPYTHONDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DPYTHONARCHDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DHAVE_PYTHON_H=1', '../test.cc', '-c', '-o', 'test.cc.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-fvisibility=hidden', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DPYTHONARCHDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DHAVE_PYTHON_H=1', '../test.cc', '-c', '-o', 'test.cc.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cc.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cc.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 ok
 -------------------------------------------------------------------------
 Checking for compilation flag -Wno-array-bounds... support
@@ -151,10 +151,10 @@ int main() { return 0; }
 <==
 [1/2] [32mcxx: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/test.cc -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o
 [0m
-['/usr/bin/g++', '-O3', '-Wno-array-bounds', '-DPYTHONDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DPYTHONARCHDIR="/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib/python2.6/site-packages"', '-DHAVE_PYTHON_H=1', '../test.cc', '-c', '-o', 'test.cc.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-array-bounds', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DPYTHONARCHDIR="/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib/python2.7/site-packages"', '-DHAVE_PYTHON_H=1', '../test.cc', '-c', '-o', 'test.cc.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cc.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cc.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 ok
 -------------------------------------------------------------------------
 Checking for pybindgen location
@@ -167,15 +167,19 @@ err: Traceback (most recent call last):
 ImportError: No module named pybindgen
 
 not found
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/bindings/python: Could not find the python module 'pybindgen'
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/bindings/python: Could not find the python module 'pybindgen'
 -------------------------------------------------------------------------
 Checking for click location
 not found
 -------------------------------------------------------------------------
 Checking for pkg-config flags for GTK_CONFIG_STORE
-['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-2.0 >= 2.12']: '-pthread -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -pthread -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lm -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lglib-2.0  \n' (exit code 0)
+['/usr/bin/pkg-config', '--cflags', '--libs', 'gtk+-2.0 >= 2.12']: '' (exit code 1)
+Package gtk+-2.0 was not found in the pkg-config search path.
+Perhaps you should add the directory containing `gtk+-2.0.pc'
+to the PKG_CONFIG_PATH environment variable
+No package 'gtk+-2.0' found
 
-ok
+not found
 -------------------------------------------------------------------------
 Checking for pkg-config flags for LIBXML2
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'libxml-2.0 >= 2.6']: '-I/usr/include/libxml2  -lxml2  \n' (exit code 0)
@@ -194,25 +198,25 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_9a9aa0a48a7447bdd461f06307f32dc7/test.cpp -> build/.conf_check_9a9aa0a48a7447bdd461f06307f32dc7/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 err: ../test.cpp: In function ‘int main()’:
-../test.cpp:4: error: ‘uint128_t’ was not declared in this scope
-../test.cpp:4: error: expected primary-expression before ‘)’ token
-../test.cpp:4: error: expected ‘)’ before numeric constant
-../test.cpp:5: error: ‘uint128_t’ was not declared in this scope
+../test.cpp:4:7: error: ‘uint128_t’ was not declared in this scope
+../test.cpp:4:18: error: expected primary-expression before ‘)’ token
+../test.cpp:4:20: error: expected ‘)’ before numeric constant
+../test.cpp:5:14: error: ‘uint128_t’ was not declared in this scope
 
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
     bld.compile()
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 47289488: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O3', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+	{task 145464780: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
 -------------------------------------------------------------------------
 Checking for type __uint128_t
 ==>
@@ -226,14 +230,28 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_703a8a276d4ad265d967b1b45f1fc578/test.cpp -> build/.conf_check_703a8a276d4ad265d967b1b45f1fc578/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
-[2/2] [33mcxxprogram: build/.conf_check_703a8a276d4ad265d967b1b45f1fc578/testbuild/test.cpp.1.o -> build/.conf_check_703a8a276d4ad265d967b1b45f1fc578/testbuild/testprog
-[0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_703a8a276d4ad265d967b1b45f1fc578/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
-yes
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+err: ../test.cpp: In function ‘int main()’:
+../test.cpp:4:7: error: ‘__uint128_t’ was not declared in this scope
+../test.cpp:4:20: error: expected primary-expression before ‘)’ token
+../test.cpp:4:22: error: expected ‘)’ before numeric constant
+../test.cpp:5:14: error: ‘__uint128_t’ was not declared in this scope
+
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
+    bld.compile()
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
+    raise Errors.BuildError(self.producer.error)
+BuildError: Build failed
+ -> task in 'testprog' failed (exit status 1): 
+	{task 144853324: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+
+not found
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
 -------------------------------------------------------------------------
 Checking high precision time implementation
-128-bit integer
+cairo 128-bit integer
 -------------------------------------------------------------------------
 Checking for header stdint.h
 ==>
@@ -246,10 +264,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_c59373285bc13999c3df79164cb29af1/test.cpp -> build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/test.cpp.1.o -> build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header inttypes.h
@@ -263,10 +281,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/test.cpp -> build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/test.cpp.1.o -> build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -280,21 +298,22 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_2ca1edb217ad9cef6c81468eb5adffbb/test.cpp -> build/.conf_check_2ca1edb217ad9cef6c81468eb5adffbb/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
-err: ../test.cpp:1:26: error: sys/inttypes.h: No such file or directory
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
+compilation terminated.
 
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
     bld.compile()
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 47334160: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+	{task 145391692: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
 -------------------------------------------------------------------------
 Checking for header sys/types.h
 ==>
@@ -307,10 +326,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_293985459965597c97c3759b44ed252b/test.cpp -> build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/test.cpp.1.o -> build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header sys/stat.h
@@ -324,10 +343,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_114df6287ed99356d14a06682bc98197/test.cpp -> build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/test.cpp.1.o -> build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header dirent.h
@@ -341,10 +360,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_38008f7ca978e5462e378992d39050f1/test.cpp -> build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/test.cpp.1.o -> build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header stdlib.h
@@ -358,10 +377,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_29f41b0aad55c9546dfc9b7ce9859059/test.cpp -> build/.conf_check_29f41b0aad55c9546dfc9b7ce9859059/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_29f41b0aad55c9546dfc9b7ce9859059/testbuild/test.cpp.1.o -> build/.conf_check_29f41b0aad55c9546dfc9b7ce9859059/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_29f41b0aad55c9546dfc9b7ce9859059/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_29f41b0aad55c9546dfc9b7ce9859059/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header signal.h
@@ -375,10 +394,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_cc227f9b4319ad1c726eca4fb806395e/test.cpp -> build/.conf_check_cc227f9b4319ad1c726eca4fb806395e/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_cc227f9b4319ad1c726eca4fb806395e/testbuild/test.cpp.1.o -> build/.conf_check_cc227f9b4319ad1c726eca4fb806395e/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_cc227f9b4319ad1c726eca4fb806395e/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_cc227f9b4319ad1c726eca4fb806395e/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header pthread.h
@@ -395,10 +414,10 @@ int main ()
 <==
 [1/2] [32mcxx: build/.conf_check_2be466e82e703a744ee152afe2b58299/test.cpp -> build/.conf_check_2be466e82e703a744ee152afe2b58299/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-pthread', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-pthread', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_2be466e82e703a744ee152afe2b58299/testbuild/test.cpp.1.o -> build/.conf_check_2be466e82e703a744ee152afe2b58299/testbuild/testprog
 [0m
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_2be466e82e703a744ee152afe2b58299/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_2be466e82e703a744ee152afe2b58299/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header stdint.h
@@ -412,10 +431,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_c59373285bc13999c3df79164cb29af1/test.cpp -> build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/test.cpp.1.o -> build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header inttypes.h
@@ -429,10 +448,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/test.cpp -> build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/test.cpp.1.o -> build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -446,21 +465,22 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_2ca1edb217ad9cef6c81468eb5adffbb/test.cpp -> build/.conf_check_2ca1edb217ad9cef6c81468eb5adffbb/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
-err: ../test.cpp:1:26: error: sys/inttypes.h: No such file or directory
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
+compilation terminated.
 
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: Test does not build: Traceback (most recent call last):
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
     bld.compile()
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 47289808: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O3', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+	{task 144924428: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/core: The configuration failed
 -------------------------------------------------------------------------
 Checking for library rt
 ==>
@@ -472,10 +492,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_fc0bab0b855f90bf0795892663948c43/test.cpp -> build/.conf_check_fc0bab0b855f90bf0795892663948c43/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-pthread', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-pthread', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DINT64X64_USE_CAIRO=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_fc0bab0b855f90bf0795892663948c43/testbuild/test.cpp.1.o -> build/.conf_check_fc0bab0b855f90bf0795892663948c43/testbuild/testprog
 [0m
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fc0bab0b855f90bf0795892663948c43/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fc0bab0b855f90bf0795892663948c43/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
 yes
 -------------------------------------------------------------------------
 Checking for header netpacket/packet.h
@@ -489,10 +509,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_0927534631877d46f179382e3e16c60a/test.cpp -> build/.conf_check_0927534631877d46f179382e3e16c60a/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_0927534631877d46f179382e3e16c60a/testbuild/test.cpp.1.o -> build/.conf_check_0927534631877d46f179382e3e16c60a/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_0927534631877d46f179382e3e16c60a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_0927534631877d46f179382e3e16c60a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for NSC location
@@ -509,10 +529,10 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_f620d214e7131b9899e39aa1327dd607/test.cpp -> build/.conf_check_f620d214e7131b9899e39aa1327dd607/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_f620d214e7131b9899e39aa1327dd607/testbuild/test.cpp.1.o -> build/.conf_check_f620d214e7131b9899e39aa1327dd607/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_f620d214e7131b9899e39aa1327dd607/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_f620d214e7131b9899e39aa1327dd607/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for header netinet/in.h
@@ -526,19 +546,14 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_323c64456e3d4ab2a4101e6f5604e508/test.cpp -> build/.conf_check_323c64456e3d4ab2a4101e6f5604e508/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '-DHAVE_PACKET_H=1', '-DHAVE_SYS_SOCKET_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_PACKET_H=1', '-DHAVE_SYS_SOCKET_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_323c64456e3d4ab2a4101e6f5604e508/testbuild/test.cpp.1.o -> build/.conf_check_323c64456e3d4ab2a4101e6f5604e508/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_323c64456e3d4ab2a4101e6f5604e508/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_323c64456e3d4ab2a4101e6f5604e508/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking boost includes
-1_42
--------------------------------------------------------------------------
-Checking boost libs
-ok
--------------------------------------------------------------------------
-Checking for OpenFlow location
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/openflow: headers not found, use --boost-includes=/path/to/boost
 not found
 -------------------------------------------------------------------------
 Checking for library sqlite3
@@ -551,25 +566,25 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_39b3cecfac3989b2ed760243cef109e6/test.cpp -> build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/test.cpp.1.o -> build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lsqlite3']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lsqlite3']
 err: /usr/bin/ld: cannot find -lsqlite3
-collect2: ld returned 1 exit status
+collect2: error: ld returned 1 exit status
 
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/stats: Test does not build: Traceback (most recent call last):
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/stats: Test does not build: Traceback (most recent call last):
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
     bld.compile()
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 47419152: cxxprogram test.cpp.1.o -> testprog}
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lsqlite3']
+	{task 144882060: cxxprogram test.cpp.1.o -> testprog}
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_39b3cecfac3989b2ed760243cef109e6/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lsqlite3']
 
 not found
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/stats: The configuration failed
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/src/stats: The configuration failed
 -------------------------------------------------------------------------
 Checking for pkg-config flags for SQLITE3
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'sqlite3']: '' (exit code 1)
@@ -591,19 +606,19 @@ int main() {
 <==
 [1/2] [32mcxx: build/.conf_check_e2bf758aaca47858b67848f504a8de27/test.cpp -> build/.conf_check_e2bf758aaca47858b67848f504a8de27/testbuild/test.cpp.1.o
 [0m
-['/usr/bin/g++', '-O3', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_e2bf758aaca47858b67848f504a8de27/testbuild/test.cpp.1.o -> build/.conf_check_e2bf758aaca47858b67848f504a8de27/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_e2bf758aaca47858b67848f504a8de27/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_e2bf758aaca47858b67848f504a8de27/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 -------------------------------------------------------------------------
 Checking for program sudo
 /usr/bin/sudo
-find program=['sudo'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='SUDO' -> '/usr/bin/sudo'
+find program=['sudo'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='SUDO' -> '/usr/bin/sudo'
 -------------------------------------------------------------------------
 Checking for program valgrind
 /usr/bin/valgrind
-find program=['valgrind'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='VALGRIND' -> '/usr/bin/valgrind'
+find program=['valgrind'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='VALGRIND' -> '/usr/bin/valgrind'
 -------------------------------------------------------------------------
 Checking for pkg-config flags for GSL
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'gsl']: ' -lgsl -lgslcblas -lm  \n' (exit code 0)
@@ -616,12 +631,40 @@ Checking for compilation flag -Wno-error=deprecated-d... support
 int main() { return 0; }
 
 <==
+[1/2] [32mcxx: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/test.cc -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o
+[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-error=deprecated-declarations', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.cc', '-c', '-o', 'test.cc.1.o']
+[2/2] [33mcxxprogram: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cc.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+ok
+-------------------------------------------------------------------------
+Checking for compilation flag -Wno-error=deprecated-d... support
+==>
+#include <stdio.h>
+int main() { return 0; }
+
+<==
 [1/2] [32mc: build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/test.c -> build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/test.c.1.o
 [0m
-['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.c', '-c', '-o', 'test.c.1.o']
+['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.c', '-c', '-o', 'test.c.1.o']
 [2/2] [33mcprogram: build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/test.c.1.o -> build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog
 [0m
-['/usr/bin/gcc', 'test.c.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+ok
+-------------------------------------------------------------------------
+Checking for compilation flag -fstrict-aliasing... support
+==>
+#include <stdio.h>
+int main() { return 0; }
+
+<==
+[1/2] [32mcxx: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/test.cc -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o
+[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.cc', '-c', '-o', 'test.cc.1.o']
+[2/2] [33mcxxprogram: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cc.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 ok
 -------------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing... support
@@ -632,10 +675,24 @@ int main() { return 0; }
 <==
 [1/2] [32mc: build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/test.c -> build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/test.c.1.o
 [0m
-['/usr/bin/gcc', '-fstrict-aliasing', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.c', '-c', '-o', 'test.c.1.o']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.c', '-c', '-o', 'test.c.1.o']
 [2/2] [33mcprogram: build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/test.c.1.o -> build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog
 [0m
-['/usr/bin/gcc', 'test.c.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+ok
+-------------------------------------------------------------------------
+Checking for compilation flag -Wstrict-aliasing... support
+==>
+#include <stdio.h>
+int main() { return 0; }
+
+<==
+[1/2] [32mcxx: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/test.cc -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o
+[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.cc', '-c', '-o', 'test.cc.1.o']
+[2/2] [33mcxxprogram: build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/test.cc.1.o -> build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog
+[0m
+['/usr/bin/g++', 'test.cc.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_fe0ca542f39064c5a14ee41a2e983996/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 ok
 -------------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing... support
@@ -646,12 +703,13 @@ int main() { return 0; }
 <==
 [1/2] [32mc: build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/test.c -> build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/test.c.1.o
 [0m
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.c', '-c', '-o', 'test.c.1.o']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_IF_TUN_H=1', '-DENABLE_GSL', '../test.c', '-c', '-o', 'test.c.1.o']
 [2/2] [33mcprogram: build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/test.c.1.o -> build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog
 [0m
-['/usr/bin/gcc', 'test.c.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev/build/.conf_check_d8a2c40aecfb7c8eac7dd03fcbfb1110/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 ok
 -------------------------------------------------------------------------
 Checking for program doxygen
-/usr/bin/doxygen
-find program=['doxygen'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin'] var='DOXYGEN' -> '/usr/bin/doxygen'
+not found
+find program=['doxygen'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='DOXYGEN' -> ''
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dev: Could not find the program doxygen

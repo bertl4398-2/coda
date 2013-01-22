@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include "test-macros.h"
-
+#include <unistd.h>
 static bool environ_search (const char *str)
 {
   for (char **cur = environ; *cur != 0; cur++)

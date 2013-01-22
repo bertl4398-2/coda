@@ -8,7 +8,7 @@
 #include <errno.h>
 #include <stdio.h>
 #include "test-macros.h"
-
+#include <unistd.h>
 #define BUFF_LEN ((size_t) 1024)
 
 static char sendBuffer [BUFF_LEN];

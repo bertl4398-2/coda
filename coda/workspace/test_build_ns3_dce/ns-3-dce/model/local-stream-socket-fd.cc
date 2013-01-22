@@ -33,7 +33,7 @@
 #include "wait-queue.h"
 #include "ns3/simulator.h"
 #include "file-usage.h"
-
+#include <unistd.h>
 NS_LOG_COMPONENT_DEFINE ("LocalStreamSocketFd");
 
 namespace ns3

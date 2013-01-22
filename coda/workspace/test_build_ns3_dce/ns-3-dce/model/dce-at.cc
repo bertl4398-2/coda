@@ -25,7 +25,7 @@
 #include "ns3/log.h"
 #include "errno.h"
 #include <string.h>
-
+#include <unistd.h>
 NS_LOG_COMPONENT_DEFINE ("DceAt");
 
 using namespace ns3;

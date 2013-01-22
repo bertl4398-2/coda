@@ -1,4 +1,4 @@
-# generated Linux suno-9.sophia.grid5000.fr 2.6.32-5-amd64 #1 SMP Sun Sep 23 10:07:46 UTC 2012
+# generated Linux dev-virtual-machine 3.5.0-22-generic #34-Ubuntu SMP Tue Jan 8 21:41:11 UTC 2013
 #
 #
 #

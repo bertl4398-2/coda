@@ -3,7 +3,7 @@
 #include <sstream>
 #include "test-macros.h"
 #include <stdio.h>
-
+#include <unistd.h>
 void
 test2 (void) // Stolen from man
 {

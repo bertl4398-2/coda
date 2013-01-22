@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 #include <errno.h>
 #include "test-macros.h"
-
+#include <unistd.h>
 static int g_static;
 int g_global;
 

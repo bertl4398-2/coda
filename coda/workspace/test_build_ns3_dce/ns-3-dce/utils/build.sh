@@ -7,7 +7,8 @@ SAVE_PKG=$PKG_CONFIG_PATH
 #echo clone ns-3-dce : 
 #hg clone http://code.nsnam.org/furbani/ns-3-dce
 cd ns-3-dev
-CXXFLAGS="-O3" ./waf configure -d optimized --prefix=`pwd`/../build --enable-tests
+#CXXFLAGS="-O3" ./waf configure -d optimized --prefix=`pwd`/../build --enable-tests
+./waf configure -d debug --prefix=`pwd`/../build --enable-tests --enable-examples
 ./waf
 ./waf install
 cd ..

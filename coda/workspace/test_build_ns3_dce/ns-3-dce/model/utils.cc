@@ -14,7 +14,7 @@
 #include <list>
 #include <fcntl.h>
 #include "file-usage.h"
-
+#include <unistd.h>
 NS_LOG_COMPONENT_DEFINE ("ProcessUtils");
 
 namespace ns3 {

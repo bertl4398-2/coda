@@ -1,27 +1,27 @@
-# project  configured on Sat Jan 12 15:52:13 2013 by
-# waf 1.6.11 (abi 98, python 20606f0 on linux2)
-# using ./waf configure --prefix=/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/../build --verbose
+# project  configured on Tue Jan 22 22:59:07 2013 by
+# waf 1.6.11 (abi 98, python 20703f0 on linux2)
+# using ./waf configure --prefix=/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/../build --verbose
 #
 ----------------------------------------
 Setting top to
-/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce
+/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce
 ----------------------------------------
 Setting out to
-/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build
+/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build
 ----------------------------------------
 Checking for 'gcc' (c compiler)
-find program=['gcc', 'cc'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin'] var='CC' -> '/usr/bin/gcc'
-find program=['ar'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin'] var='AR' -> '/usr/bin/ar'
+find program=['gcc', 'cc'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='CC' -> '/usr/bin/gcc'
+find program=['ar'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='AR' -> '/usr/bin/ar'
 /usr/bin/gcc
 ----------------------------------------
 Checking for 'g++' (c++ compiler)
-find program=['g++', 'c++'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin'] var='CXX' -> '/usr/bin/g++'
+find program=['g++', 'c++'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='CXX' -> '/usr/bin/g++'
 (tool ar is already loaded, skipping)
 /usr/bin/g++
 ----------------------------------------
 Checking for program pkg-config
 /usr/bin/pkg-config
-find program=['pkg-config'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin'] var='PKGCONFIG' -> '/usr/bin/pkg-config'
+find program=['pkg-config'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='PKGCONFIG' -> '/usr/bin/pkg-config'
 ------------------------------------------
 Checking for pkg-config version >= '0.0.0'
 ['/usr/bin/pkg-config', '--atleast-pkgconfig-version=0.0.0']
@@ -38,84 +38,84 @@ int main() { return 0; }
 ['/usr/bin/gcc', '-Wl,--soname=foo', '../test.c', '-c', '-o', 'test.c.1.o']
 [2/2] [33mcprogram: build/.conf_check_0c2b10ba6878dc866144bf5ea8a6b94b/testbuild/test.c.1.o -> build/.conf_check_0c2b10ba6878dc866144bf5ea8a6b94b/testbuild/testprog
 [0m
-['/usr/bin/gcc', 'test.c.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_0c2b10ba6878dc866144bf5ea8a6b94b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/gcc', 'test.c.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_0c2b10ba6878dc866144bf5ea8a6b94b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for ns3-core
 ['/usr/bin/pkg-config', 'libns3-dev-core-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-network
 ['/usr/bin/pkg-config', 'libns3-dev-network-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-internet
 ['/usr/bin/pkg-config', 'libns3-dev-internet-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-point-to-point
 ['/usr/bin/pkg-config', 'libns3-dev-point-to-point-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-tap-bridge
 ['/usr/bin/pkg-config', 'libns3-dev-tap-bridge-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-tap-bridge-debug -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-tap-bridge-debug -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-netanim
 ['/usr/bin/pkg-config', 'libns3-dev-netanim-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-netanim-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-lte-debug -lns3-dev-spectrum-debug -lns3-dev-wimax-debug -lns3-dev-point-to-point-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/libxml2  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-netanim-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-lte-debug -lns3-dev-spectrum-debug -lns3-dev-wimax-debug -lns3-dev-point-to-point-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-wifi
 ['/usr/bin/pkg-config', 'libns3-dev-wifi-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-wifi-debug -lns3-dev-propagation-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-wifi-debug -lns3-dev-propagation-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-point-to-point
 ['/usr/bin/pkg-config', 'libns3-dev-point-to-point-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-csma
 ['/usr/bin/pkg-config', 'libns3-dev-csma-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-csma-debug -lns3-dev-applications-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/libxml2  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-csma-debug -lns3-dev-applications-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-mobility
 ['/usr/bin/pkg-config', 'libns3-dev-mobility-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-mesh
 ['/usr/bin/pkg-config', 'libns3-dev-mesh-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-mesh-debug -lns3-dev-wifi-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-mobility-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/libxml2  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-mesh-debug -lns3-dev-wifi-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-mobility-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-olsr
 ['/usr/bin/pkg-config', 'libns3-dev-olsr-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-olsr-debug -lns3-dev-point-to-point-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-propagation-debug -lns3-dev-mobility-debug -lns3-dev-applications-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/libxml2  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-olsr-debug -lns3-dev-point-to-point-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-propagation-debug -lns3-dev-mobility-debug -lns3-dev-applications-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-point-to-point-layout
 ['/usr/bin/pkg-config', 'libns3-dev-point-to-point-layout-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-layout-debug -lns3-dev-netanim-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-lte-debug -lns3-dev-spectrum-debug -lns3-dev-wimax-debug -lns3-dev-point-to-point-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/libxml2  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-layout-debug -lns3-dev-netanim-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-lte-debug -lns3-dev-spectrum-debug -lns3-dev-wimax-debug -lns3-dev-point-to-point-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 (tool compiler_cc is already loaded, skipping)
@@ -134,7 +134,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/test.cpp.1.o -> build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_c59373285bc13999c3df79164cb29af1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for header inttypes.h
@@ -151,7 +151,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/test.cpp.1.o -> build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_591f7be6a22ba3cd4f507fd8bc09bd2a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for header sys/inttypes.h
@@ -166,22 +166,23 @@ int main() {
 [1/2] [32mcxx: build/.conf_check_2ca1edb217ad9cef6c81468eb5adffbb/test.cpp -> build/.conf_check_2ca1edb217ad9cef6c81468eb5adffbb/testbuild/test.cpp.1.o
 [0m
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
-err: ../test.cpp:1:26: error: sys/inttypes.h: No such file or directory
+err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
+compilation terminated.
 
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce: Test does not build: Traceback (most recent call last):
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce: Test does not build: Traceback (most recent call last):
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/c_config.py", line 445, in run_c_code
     bld.compile()
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/errcheck.py", line 124, in check_compile
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Tools/errcheck.py", line 124, in check_compile
     ret=self.orig_compile()
-  File "/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
+  File "/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/.waf-1.6.11-30618c54883417962c38f5d395f83584/waflib/Build.py", line 190, in compile
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 17082960: cxx test.cpp -> test.cpp.1.o}
+	{task 142241132: cxx test.cpp -> test.cpp.1.o}
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 
 not found
-from /root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce: The configuration failed
+from /home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce: The configuration failed
 ------------------------------------------
 Checking for header sys/types.h
 ==>
@@ -197,7 +198,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/test.cpp.1.o -> build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_293985459965597c97c3759b44ed252b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for header sys/stat.h
@@ -214,7 +215,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/test.cpp.1.o -> build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_114df6287ed99356d14a06682bc98197/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for header dirent.h
@@ -231,7 +232,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/test.cpp.1.o -> build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/testprog
 [0m
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_38008f7ca978e5462e378992d39050f1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for library dl
@@ -247,7 +248,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_bfeace9255fbb4045f0950e797aeccf4/testbuild/test.cpp.1.o -> build/.conf_check_bfeace9255fbb4045f0950e797aeccf4/testbuild/testprog
 [0m
-['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_bfeace9255fbb4045f0950e797aeccf4/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ldl']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_bfeace9255fbb4045f0950e797aeccf4/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-ldl']
 yes
 ------------------------------------------
 Checking for glibc get_cpu_features
@@ -260,7 +261,7 @@ int main() {__get_cpu_features();}
 ['/usr/bin/gcc', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.c', '-c', '-o', 'test.c.1.o']
 [2/2] [33mcprogram: build/.conf_check_7649f7e9c182721864cc00c2098809e9/testbuild/test.c.1.o -> build/.conf_check_7649f7e9c182721864cc00c2098809e9/testbuild/testprog
 [0m
-['/usr/bin/gcc', '-Wl,--no-as-needed', '-pthread', 'test.c.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_7649f7e9c182721864cc00c2098809e9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/gcc', '-Wl,--no-as-needed', '-pthread', 'test.c.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_7649f7e9c182721864cc00c2098809e9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for header valgrind/valgrind.h
@@ -277,7 +278,7 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_GETCPUFEATURES=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_646ecdf7c4af35b145a7630e066e74f1/testbuild/test.cpp.1.o -> build/.conf_check_646ecdf7c4af35b145a7630e066e74f1/testbuild/testprog
 [0m
-['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_646ecdf7c4af35b145a7630e066e74f1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_646ecdf7c4af35b145a7630e066e74f1/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Checking for header valgrind/memcheck.h
@@ -294,63 +295,63 @@ int main() {
 ['/usr/bin/g++', '-g', '-DNS3_LOG_ENABLE', '-DNS3_ASSERT_ENABLE', '-DHAVE_NS3_CORE=1', '-DHAVE_NS3_NETWORK=1', '-DHAVE_NS3_INTERNET=1', '-DHAVE_NS3_POINT_TO_POINT=1', '-DHAVE_NS3_TAP_BRIDGE=1', '-DHAVE_NS3_NETANIM=1', '-DHAVE_NS3_WIFI=1', '-DHAVE_NS3_CSMA=1', '-DHAVE_NS3_MOBILITY=1', '-DHAVE_NS3_MESH=1', '-DHAVE_NS3_OLSR=1', '-DHAVE_NS3_POINT_TO_POINT_LAYOUT=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_GETCPUFEATURES=1', '-DHAVE_VALGRIND_VALGRIND_H=1', '../test.cpp', '-c', '-o', 'test.cpp.1.o']
 [2/2] [33mcxxprogram: build/.conf_check_11b7b2c74b84e93c63133ee18ef65566/testbuild/test.cpp.1.o -> build/.conf_check_11b7b2c74b84e93c63133ee18ef65566/testbuild/testprog
 [0m
-['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/root/inria-coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_11b7b2c74b84e93c63133ee18ef65566/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-Wl,--no-as-needed', '-pthread', 'test.cpp.1.o', '-o', '/home/dev/coda/coda/workspace/test_build_ns3_dce/ns-3-dce/build/.conf_check_11b7b2c74b84e93c63133ee18ef65566/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------
 Searching C library
-/lib64/libc.so.6
+/lib/i386-linux-gnu/libc.so.6
 ------------------------------------------
 Searching pthread library
-/lib64/libpthread.so.0
+/lib/i386-linux-gnu/libpthread.so.0
 ------------------------------------------
 Checking for program readversiondef
-/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin/readversiondef
-find program=['readversiondef'] paths=['/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin'] var='READVERSIONDEF' -> '/root/inria-coda/coda/workspace/test_build_ns3_dce/build/bin/readversiondef'
+/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin/readversiondef
+find program=['readversiondef'] paths=['/usr/lib/lightdm/lightdm', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin', '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin'] var='READVERSIONDEF' -> '/home/dev/coda/coda/workspace/test_build_ns3_dce/build/bin/readversiondef'
 ------------------------------------------
 Checking for ns3-core
 ['/usr/bin/pkg-config', 'libns3-dev-core-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-internet
 ['/usr/bin/pkg-config', 'libns3-dev-internet-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-point-to-point
 ['/usr/bin/pkg-config', 'libns3-dev-point-to-point-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
-
-yes
-------------------------------------------
-Checking for ns3-emu
-['/usr/bin/pkg-config', 'libns3-dev-emu-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-emu-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
-
-yes
-------------------------------------------
-Checking for ns3-core
-['/usr/bin/pkg-config', 'libns3-dev-core-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
-
-yes
-------------------------------------------
-Checking for ns3-internet
-['/usr/bin/pkg-config', 'libns3-dev-internet-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
-
-yes
-------------------------------------------
-Checking for ns3-point-to-point
-['/usr/bin/pkg-config', 'libns3-dev-point-to-point-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
 ------------------------------------------
 Checking for ns3-netanim
 ['/usr/bin/pkg-config', 'libns3-dev-netanim-debug', '--cflags', '--libs']
-out: -pthread -I/root/inria-coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/gtk-2.0 -I/usr/lib/gtk-2.0/include -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2  -Wl,-Bdynamic -L/root/inria-coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-netanim-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-lte-debug -lns3-dev-spectrum-debug -lns3-dev-wimax-debug -lns3-dev-point-to-point-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lgtk-x11-2.0 -lgdk-x11-2.0 -latk-1.0 -lpangoft2-1.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lcairo -lgio-2.0 -lpango-1.0 -lfreetype -lfontconfig -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lglib-2.0 -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev -I/usr/include/libxml2  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-netanim-debug -lns3-dev-wifi-debug -lns3-dev-csma-debug -lns3-dev-lte-debug -lns3-dev-spectrum-debug -lns3-dev-wimax-debug -lns3-dev-point-to-point-debug -lns3-dev-applications-debug -lns3-dev-propagation-debug -lns3-dev-internet-debug -lns3-dev-config-store-debug -lxml2 -lns3-dev-tools-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-mobility-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-core
+['/usr/bin/pkg-config', 'libns3-dev-core-debug', '--cflags', '--libs']
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-internet
+['/usr/bin/pkg-config', 'libns3-dev-internet-debug', '--cflags', '--libs']
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-internet-debug -lns3-dev-bridge-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-point-to-point
+['/usr/bin/pkg-config', 'libns3-dev-point-to-point-debug', '--cflags', '--libs']
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-point-to-point-debug -lns3-dev-mpi-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
+
+yes
+------------------------------------------
+Checking for ns3-emu
+['/usr/bin/pkg-config', 'libns3-dev-emu-debug', '--cflags', '--libs']
+out: -pthread -I/home/dev/coda/coda/workspace/test_build_ns3_dce/build/include/ns3-dev  -Wl,-Bdynamic -L/home/dev/coda/coda/workspace/test_build_ns3_dce/build/lib -lns3-dev-emu-debug -lns3-dev-network-debug -lns3-dev-core-debug -lrt -lgsl -lgslcblas -lm  
 
 yes
