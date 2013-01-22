@@ -1,0 +1,1 @@
+..//exttests/../generic.mk
